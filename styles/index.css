@@ -1,6 +1,21 @@
+:root{
+  --lightBlue:#31C3BD;
+  --lightBlueHover:#65E9E4;
+  --lightYellow:#F2B137;
+  --lightYellowHover:#FFC860;
+  --DarkNavy:#1A2A33;
+  --SemiDarkNavy:#1F3641;
+  --silver:#A8BFC9;
+  --SilverHover:#DBE8ED;
+  --l:40px;
+  --m:24px;
+  --s:20px;
+  --xs:16px
+}
+
 body {
     margin: 0;
-    font-family: Outfit;
+    font-family: 'Outfit', sans-serif;
     background: #1A2A33;
   }
   
