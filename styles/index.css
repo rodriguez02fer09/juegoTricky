@@ -17,22 +17,71 @@ body {
     margin: 0;
     font-family: 'Outfit', sans-serif;
     background: #1A2A33;
+
   }
-  
 .container-figuras{
-  width: 200px;
-  height: 100px;
-  background-color: brown;
+  display: grid;
+ place-content: center;
+
+ 
+
 }
+.container-figuras .figure-x,.container-figuras .figure-o{
+
+  Width: 25.8px;
+    Height: 26.84px;
+    Top: 240.56px;
+    Left: 717.49px;
+ 
+}
+
+
 .container-pick-player{
-  background-color: burlywood;
+display: grid;
+ place-content: center;
+ Width :460px;
+Height :205px;
+margin: auto;
+background-color: var(--SemiDarkNavy);
+border-radius: 15px;
+
 }
-.container-new-game{
-  background-color: cyan;
+.container-pick-player .container-title-player{
+  color: var(--silver);
+  font-size: var(--xs);
 }
-.container-new-player{
-  background-color: darkorchid;
+.container-inform p {
+  color: var(--silver);
+  
 }
+
 .container-select-player{
-  background-color: darkseagreen;
+  width: 412px;
+  height: 72px;
+  top:68px;
+  left:24px;
+  background-color: var(--DarkNavy);
+  border-radius: 10px;
+}
+
+.container-new-game .container-new-player{
+ display: flex;
+ flex-direction: column;
+
+
+}
+
+.container-new-game .container-new-player .button-1 {
+Width :340px;
+ Height :60px;
+ border-radius :15px;
+background-color: var(--lightYellow);
+
+} 
+.container-new-game .container-new-player .button-2 {
+  Width :340px;
+Height :60px;
+border-radius :15px;
+background-color: var(--lightBlue);
+
 }
