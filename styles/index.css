@@ -14,18 +14,19 @@
 }
 
 body {
-    margin: 0;
-    font-family: 'Outfit', sans-serif;
-    background: #1A2A33;
 
+  font-family: 'Outfit', sans-serif;
+  background: #1A2A33;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
   }
 .container-figuras{
   display: grid;
  place-content: center;
 
- 
-
-}
+  }
 .container-figuras .figure-x,.container-figuras .figure-o{
 
   Width: 25.8px;
@@ -44,33 +45,78 @@ Height :205px;
 margin: auto;
 background-color: var(--SemiDarkNavy);
 border-radius: 15px;
+box-shadow: inset 0px -8px 0px #10212A;
+}
+.container-pick-player .container-title-player p{
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--silver);
+}
 
-}
-.container-pick-player .container-title-player{
-  color: var(--silver);
-  font-size: var(--xs);
-}
-.container-inform p {
-  color: var(--silver);
-  
-}
 
 .container-select-player{
   width: 412px;
   height: 72px;
   top:68px;
   left:24px;
-  background-color: var(--DarkNavy);
-  border-radius: 10px;
-}
 
+  border-radius: 10px;
+  display: flex;
+  justify-content: center ;
+}
+.container-pick-player .container-select-player{
+  Width :412px;
+  Height :72px;
+  Top :68px;
+  Left :24px;
+  border-radius: 10px;
+  background-color: var(--DarkNavy);
+  padding: 0px;
+ 
+}
+.container-pick-player .container-select-player-2  {
+  Width :198px;
+  Height :54px;
+  Top :77px;
+  Left :230px;
+  border-radius: 10px;
+  background-color: var(--silver);
+  
+
+}
+   
 .container-new-game .container-new-player{
  display: flex;
  flex-direction: column;
 
+ 
+ 
+
 
 }
 
+.container-inform p{
+  height: 18px;
+left: 29.24%;
+right: 28.8%;
+top: calc(50% - 18px/2 + 63.5px);
+color: var(--silver);
+font-family: Outfit;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+text-align: center;
+letter-spacing: 0.875px;
+mix-blend-mode: normal;
+opacity: 0.5;
+}
 .container-new-game .container-new-player .button-1 {
 Width :340px;
  Height :60px;
@@ -84,4 +130,8 @@ Height :60px;
 border-radius :15px;
 background-color: var(--lightBlue);
 
+}
+.container-inform p {
+  color: var(--silver);
+  
 }
