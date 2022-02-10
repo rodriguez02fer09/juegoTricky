@@ -17,35 +17,44 @@ body {
 
   font-family: 'Outfit', sans-serif;
   background: #1A2A33;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0;
+  padding: 0;
+  
+  
   
   }
-.container-figuras{
-  display: grid;
- place-content: center;
 
+  main{
+   margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
   }
-.container-figuras .figure-x,.container-figuras .figure-o{
 
-  Width: 25.8px;
-    Height: 26.84px;
-    Top: 240.56px;
-    Left: 717.49px;
- 
-}
 
 
 .container-pick-player{
-display: grid;
- place-content: center;
  Width :460px;
-Height :205px;
-margin: auto;
+Height :215px;
+margin: 20px;
 background-color: var(--SemiDarkNavy);
 border-radius: 15px;
 box-shadow: inset 0px -8px 0px #10212A;
+
+
+
+}
+.container-select-player{
+  width: 412px;
+  height: 72px;
+  top:68px;
+  left:24px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center ;
 }
 .container-pick-player .container-title-player p{
   font-family: Outfit;
@@ -60,16 +69,7 @@ box-shadow: inset 0px -8px 0px #10212A;
 }
 
 
-.container-select-player{
-  width: 412px;
-  height: 72px;
-  top:68px;
-  left:24px;
 
-  border-radius: 10px;
-  display: flex;
-  justify-content: center ;
-}
 .container-pick-player .container-select-player{
   Width :412px;
   Height :72px;
@@ -78,60 +78,79 @@ box-shadow: inset 0px -8px 0px #10212A;
   border-radius: 10px;
   background-color: var(--DarkNavy);
   padding: 0px;
+  margin: auto;
  
 }
-.container-pick-player .container-select-player-2  {
+
+.container-pick-player .container-select-player-2 {
   Width :198px;
   Height :54px;
   Top :77px;
   Left :230px;
   border-radius: 10px;
   background-color: var(--silver);
-  
 
 }
    
 .container-new-game .container-new-player{
  display: flex;
  flex-direction: column;
-
- 
- 
-
-
 }
 
 .container-inform p{
   height: 18px;
-left: 29.24%;
-right: 28.8%;
-top: calc(50% - 18px/2 + 63.5px);
-color: var(--silver);
-font-family: Outfit;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 18px;
-text-align: center;
-letter-spacing: 0.875px;
-mix-blend-mode: normal;
-opacity: 0.5;
+  left: 29.24%;
+  right: 28.8%;
+  top: calc(50% - 18px/2 + 63.5px);
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: 5px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.875px;
+  color:var(--silver);
+  padding-top: 12px;
+  mix-blend-mode: normal;
+  opacity: 0.5;
 }
 .container-new-game .container-new-player .button-1 {
-Width :340px;
- Height :60px;
+Width :460px;
+ Height :67px;
  border-radius :15px;
 background-color: var(--lightYellow);
+margin-top: 20px;
+margin-bottom: 25px;
+box-shadow: inset 0px -8px 0px #CC8B13;
+font-family: 'Outfit', sans-serif;
+font-size: var(--s);
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 25px;
+text-align: center;
+letter-spacing: 1.25px;
+text-transform: uppercase;
+color: var(--DarkNavy);
+
 
 } 
 .container-new-game .container-new-player .button-2 {
-  Width :340px;
-Height :60px;
+Width :460px;
+Height :67px;
 border-radius :15px;
 background-color: var(--lightBlue);
+box-shadow: inset 0px -8px 0px #118C87;
+font-family: 'Outfit', sans-serif;
+font-size: var(--s);
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 25px;
+text-align: center;
+letter-spacing: 1.25px;
+text-transform: uppercase;
+color: var(--DarkNavy);
 
-}
-.container-inform p {
-  color: var(--silver);
-  
+
 }
