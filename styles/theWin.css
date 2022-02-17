@@ -36,10 +36,7 @@
        height:266px;
        margin: 260px 0px;
   
-    
-
-
-       
+      
      }
 
 
@@ -102,9 +99,20 @@
       grid-template-rows: 1fr 1fr 1fr;
       
    }
+   .one , .two , .three {
+    width: 140px;
+    height: 140px;
+    left: 810px;
+    top: 211px;   
+    background: var(--lightBlue);
+    box-shadow: inset 0px -8px 0px #10212A;
+    border-radius: 15px;
+    padding: 35px;
+    box-sizing: border-box;
+    margin: 10px;
+   }
   
-  
-   .one , .two , .three , .four , .five , .six , .seven , .eight , .nine{
+   .four , .five , .six , .seven , .eight , .nine{
       width: 140px;
       height: 140px;
       left: 810px;
@@ -253,7 +261,7 @@
       line-height: 50px;
       letter-spacing: 2.5px;
       text-transform: uppercase;
-      color: var(--lightYellow);
+      color: var(--lightBlue);
       height: 50px;
       margin: 12px 0px;
     }
