@@ -58,6 +58,7 @@ main {
   justify-content: space-around;
   background-color: var(--DarkNavy);
   margin: auto;
+ 
 }
 
 .container-player {
@@ -67,6 +68,7 @@ main {
   margin: auto;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .container-player__select {

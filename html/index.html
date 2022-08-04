@@ -5,56 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <title>PICK PLAYER</title>
   </head>
   <body>
-      <main>
+    <main>
       <section class="container-figuras">
         <figure>
-           <img class="figure-x" src="../assets/icon-x.svg" width="30px"  alt="">
-           <img class="figure-o"src="../assets/icon-o.svg"  width="30px" alt=""> 
+          <img
+            class="figure-x"
+            src="../assets/icon-x.svg"
+            width="30px"
+            alt=""
+          />
+          <img
+            class="figure-o"
+            src="../assets/icon-o.svg"
+            width="30px"
+            alt=""
+          />
         </figure>
       </section>
 
-
-  <section class="container-pick-player">
-        <div class="container-title-player" >
-           <p>PICK PLAYER1`S MARK</p>
-        </div>
-          
-        <div class="container-select-player"> 
-          <div class="container-player">  
-             <figure class="fig">
-                <img class="img" src="../assets/selec-white-x.svg" width=32px  height=32px  alt="">
-             </figure>
-          </div>  
-              
-          <div class="container-player container-player__select">
-                <figure class="fig">
-                <img class="img" src="../assets/select-blue-o.svg"  width=45px  height= 45px alt="">             
-               </figure>
-            </div>
-
+      <section class="container-pick-player">
+        <div class="container-title-player">
+          <p>PICK PLAYER1`S MARK</p>
         </div>
 
+        <div class="container-select-player">
+          <div class="container-player x">
+            <figure class="fig">
+              <img
+                class="img"
+                src="../assets/select-white-x.svg"
+                width="32px"
+                height="32px"
+                alt=""
+              />
+            </figure>
+          </div>
 
-          
-          <div class="container-inform">
-             <p>REMEMBER : X GOES FIRTS</p>
-         </div>
-  </section>
+          <div class="container-player o">
+            <figure class="fig">
+              <img
+                class="img"
+                src="../assets/select-white-o.svg"
+                width="45px"
+                height="45px"
+                alt=""
+              />
+            </figure>
+          </div>
+        </div>
 
-       <section class="container-new-game">
+        <div class="container-inform">
+          <p>REMEMBER : X GOES FIRTS</p>
+        </div>
+      </section>
+
+      <section class="container-new-game">
         <div class="container-new-player">
           <button class="button-1">NEW GAME(VS CPU)</button>
-         
+
           <button class="button-2">NEW GAME(VS PLAYER)</button>
         </div>
-       </section>
-      </main>
+      </section>
+    </main>
     <script src="../js/index.js"></script>
   </body>
 </html>
