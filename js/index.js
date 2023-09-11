@@ -18,101 +18,103 @@ var board = [
   (move9 = { p: "2,2", v: "", index: "8" }),
 ];
 
-const getPlayerBoard = (board, player) => {
-  return board.filter((move) => move.v === player);
+// CALCULOS DE COLUMNAS
+//esta funcion me trae el valor de cada una de las posiciones
+const getByColumn = (colummn, board) => {
+  const valor = [];
+
+  for (let i = colummn; i <= 6 + colummn; i += 3) {
+    valor.push(board[i].v);
+  }
+  return valor;
 };
 
-const boardPlayerX = getPlayerBoard(board, "X");
-boardPlayerX;
+//aqui recibe como parametro las jugadas que hay en el array y
+// el valor con el que esta jugando sea X ó O
+//Y ESTO ES LO QUE COMPÀRA SI SI ES GANADOR O  NO 
+//otra forma de hacerlo
 
-const column1 = (boardPlayerX) => {
-  return (
-    boardPlayerX.filter(
-      (b) => b.index === "0" || b.index === "3" || b.index === "6"
-    ).length === 3
-  );
+
+const winnerAllColumns = (currentPlayer, board) => {
+  let isWinner = false
+  for (let i = 0 ; i <= 2; i++) {
+     let columnPlayers = getByColumn(i ,board)
+     if(winer(columnPlayers,currentPlayer)){
+        isWinner = true
+     }
+  }
+   return isWinner
 };
 
-const c1 = column1(boardPlayerX);
-console.log(c1);
 
-const column2 = (boardPlayerX) => {
-  return (
-    boardPlayerX.filter(
-      (b) => b.index === "1" || b.index === "4" || b.index === "7"
-    ).length === 3
-  );
+// winer CALCULA PARA TODAS LAS FUNCIONES
+const winer = (plays,  currentPlayer) => {
+  plays
+return plays.every((c) => {
+ return c ===  currentPlayer;
+});
 };
-const c2 = column2(boardPlayerX);
-console.log(c2);
 
-const column3 = (boardPlayerX) => {
-  return (
-    boardPlayerX.filter(
-      (b) => b.index === "2" || b.index === "5" || b.index === "8"
-    ).length === 3
-  );
-};
-const c3 = column3(boardPlayerX);
-console.log(c3);
-// rowa
-const row1 = (boardPlayerX) => {
-  return (
-    boardPlayerX.filter(
-      (b) => b.index === "0" || b.index === "1" || b.index === "2"
-    ).length === 3
-  );
-};
-const r1 = row1(boardPlayerX);
-console.log(r1);
 
-const row2 = (boardPlayerX) => {
-  return (
-    boardPlayerX.filter(
-      (b) => b.index === "3" || b.index === "4" || b.index === "5"
-    ).length === 3
-  );
-};
-const r2 = row2(boardPlayerX);
-console.log(r2);
 
-const row3 = (boardPlayerX) => {
-  return (
-    boardPlayerX.filter(
-      (b) => b.index === "6" || b.index === "7" || b.index === "8"
-    ).length === 3
-  );
-};
-const r3 = row3(boardPlayerX);
-console.log(r3);
+const winnerA = winnerAllColumns("X",board)
+winnerA
 
-const diagonal1 = (boardPlayerX) => {
-  return (
-    boardPlayerX.filter(
-      (b) => b.index === "0" || b.index === "4" || b.index === "8"
-    ).length === 3
-  );
-};
-const d1 = diagonal1(boardPlayerX);
-console.log(d1);
-const diagonal2 = (boardPlayerX) => {
-  return (
-    boardPlayerX.filter(
-      (b) => b.index === "2" || b.index === "4" || b.index === "6"
-    ).length === 3
-  );
-};
-const d2 = diagonal2(boardPlayerX);
-console.log(d2);
 
-const calcularC = (p, board) => {
-    const valor = [];
-  
-    for (let i = p; i <= 6 + p; i += 3) {
-      valor.push(board[i].v); 
+//CALCULO DE FILAS
+
+const getByRow = (row, board) => {
+  let valor = [];
+  for (let i = row; i <= 2 + row; i++) {
+    valor.push(board[i].v);
+  }
+  return valor;
+};
+
+//winer
+
+const wionnerAllRows = (currentPlayer, board) => {
+  let isWinnerRow = false;
+  for (let i = 0; i <= 6; i += 3) {
+    i;
+    let rowPlayers = getByRow(i, board);
+    if (winer(rowPlayers, currentPlayer)) {
+      isWinnerRow = true;
     }
-    return valor;
-  };
-  
-  const cal = calcularC(0, board); 
-  console.log(cal); 
+  }
+
+  return isWinnerRow;
+};
+
+const winnerR = wionnerAllRows("X", board);
+winnerR;
+
+//DIAGONAL DERECHA
+
+const getRigthDiagonal = (board) => {
+  let valor = [];
+  for (let i = 2; i <= 6; i += 2) {
+  i
+    valor.push(board[i].v);
+  }
+  return valor;
+};
+
+
+//winer
+
+const getDiagonalLeft = (board) => {
+  let valor = [];
+  for (let i = 0; i <= 8; i += 4) {
+  i
+    valor.push(board[i].v);
+  }
+  return valor;
+}
+
+
+const winnerDiagonal = getDiagonalLeft (board);
+winnerDiagonal;
+w = winer(winnerDiagonal, 'X')
+
+
